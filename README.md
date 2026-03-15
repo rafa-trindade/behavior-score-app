@@ -100,7 +100,7 @@ behavior-score-app/
 
 ---
 
-## 📈 Resultados do Modelo (OOT - Fev/25 a Mar/25)
+## 📈 Resultados do Modelo (OOT - Fev/25 e Mar/25)
 
 | Métrica | Resultado | Meta | Status |
 |---|---|---|---|
