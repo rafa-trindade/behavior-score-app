@@ -1,6 +1,6 @@
 # 📈 Behavior Score CMV - Painel de Análise e Decisão
 
-[![Live Badge](https://img.shields.io/badge/-Live-2B5482?style=flat-square&logo=streamlit&logoColor=fff)](https://bi-petstore.streamlit.app/)
+[![Live Badge](https://img.shields.io/badge/-Live-2B5482?style=flat-square&logo=streamlit&logoColor=fff)](https://behavior-score-app.streamlit.app/)
 [![Projeto Badge](https://img.shields.io/badge/-project--core-2B5482?style=flat-square&logo=github&logoColor=fff)](https://github.com/rafa-trindade/hackathon-pod-squad3-core)
 [![Projeto Badge](https://img.shields.io/badge/-project--ops-2B5482?style=flat-square&logo=github&logoColor=fff)](https://github.com/rafa-trindade/hackathon-pod-squad3-ops)
 
@@ -15,7 +15,8 @@
 |---|---|
 | [`hackathon-pod-squad3-core`](https://github.com/rafa-trindade/hackathon-pod-squad3-core) |  Engine de processamento, arquitetura medalhão e gestão de performance com governança de dados nativa |
 | [`hackathon-pod-squad3-ops`](https://github.com/rafa-trindade/hackathon-pod-squad3-ops) |  Infraestrutura como código (IaC), orquestração de pipelines e estratégias de Cloud Readiness |
-| [`behavior-score-app`](https://github.com/rafa-trindade/behavior-score-app) ← **você está aqui** | Painel Streamlit de portfólio com sample dos dados |
+| [`behavior-score-app`](https://github.com/rafa-trindade/behavior-score-app) | Painel de Análise e Decisão para portfólio com sample dos dados |
+| [`observability-app`](https://github.com/rafa-trindade/observability-app) | Painel de Observabilidade para portfólio com sample dos dados |
 
 ---
 
@@ -80,20 +81,20 @@ OCI Object Storage (S3)
 ```
 behavior-score-app/
 ├── .streamlit/
-│   └── config.toml              # Tema e configurações do servidor
+│   └── config.toml                       # Tema e configurações do servidor
 ├── assets/
-│   └── style.css                # Estilos customizados
+│   └── style.css                         # Estilos customizados
 ├── config/
-│   └── data_connections.py      # Stub de conexão (S3 desativado: utiliza apenas amostra local)
+│   └── data_connections.py               # Stub de conexão (S3 desativado: utiliza apenas amostra local)
 ├── data/
-│   ├── sample_abt_model_features.parquet  # Amostra anonimizada da ABT
-│   └── base_escorada_swap_v1.parquet      # Base do grupo controle para análise de swap
+│   ├── sample_abt_model_features.parquet # Amostra anonimizada da ABT
+│   └── base_escorada_swap_v1.parquet     # Base do grupo controle para análise de swap
 ├── models/
-│   └── behavior_catboost_v1.pkl           # Artefato do modelo (features + metadata + model)
+│   └── behavior_catboost_v1.pkl          # Artefato do modelo (features + metadata + model)
 ├── utils/
-│   ├── utils.py                 # Funções de dados, plots e scoring
-│   └── br_states.geojson        # Geometria dos estados brasileiros
-└── app.py                       # Aplicação principal Streamlit
+│   ├── utils.py                          # Funções de dados, plots e scoring
+│   └── br_states.geojson                 # Geometria dos estados brasileiros
+└── app.py                                # Aplicação principal Streamlit
 ```
 
 ---
