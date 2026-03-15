@@ -343,7 +343,7 @@ def main():
                             
                             st.markdown(f"""
                                 <div style="display: flex; flex-direction: column;">
-                                    <p style="font-size: 0.85rem; color: #999; margin-bottom: 0px;">Volume Total (Full Sample)</p>
+                                    <p style="font-size: 0.85rem; color: #999; margin-bottom: 0px;">Volume Total (Sample)</p>
                                     <div style="display: flex; align-items: baseline; gap: 8px;">
                                         <span style="font-size: 1.6rem; font-weight: 600; color: #FFF;">{vol_str}</span>
                                         <span style="font-size: 0.9rem; color: {cor_delta}; font-weight: bold;">{seta}{vol_mom:.1%} (MoM)</span>
