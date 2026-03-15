@@ -103,7 +103,7 @@ COLORS = {
 st.sidebar.markdown(
     """
     <div style="display: flex; justify-content: flex-end; width: 100%; overflow: hidden; margin-top: 10px; margin-bottom: -5px;">
-        <img src="https://i.postimg.cc/dQNRCk8X/Group-4.png" style="width: 100%; object-fit: contain;">
+        <img src="https://i.postimg.cc/G3BFst3b/Group-32.png" style="width: 100%; object-fit: contain;">
     </div>
     """,
     unsafe_allow_html=True
@@ -2276,7 +2276,12 @@ def main():
                 
                 @st.cache_data(show_spinner=False)
                 def get_curated_cpfs(_df):
-                    return _df['num_cpf'].dropna().astype(str).unique().tolist()
+                    cpfs = _df['num_cpf'].dropna().astype(str).unique().tolist()
+                    import random
+                    random.shuffle(cpfs)
+                    return cpfs[:5000]
+
+                lista_cpfs_view = get_curated_cpfs(df_master)
                     
                 pct_bureau = metadata.get('cutoff_bureau_pct', 30.0)
                 lista_cpfs_view = get_curated_cpfs(df_master)
