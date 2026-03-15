@@ -15,8 +15,8 @@
 |---|---|
 | [`hackathon-pod-squad3-core`](https://github.com/rafa-trindade/hackathon-pod-squad3-core) |  Engine de processamento, arquitetura medalhão e gestão de performance com governança de dados nativa |
 | [`hackathon-pod-squad3-ops`](https://github.com/rafa-trindade/hackathon-pod-squad3-ops) |  Infraestrutura como código (IaC), orquestração de pipelines e estratégias de Cloud Readiness |
-| [`observability-app`](https://github.com/rafa-trindade/observability-app) | Painel de Observabilidade para portfólio com sample dos dados |
-| **[`behavior-score-app`](https://github.com/rafa-trindade/behavior-score-app)**  | **Painel de Análise e Decisão para portfólio com sample dos dados** |
+| [`behavior-score-obs`](https://github.com/rafa-trindade/behavior-score-obs) | Painel de observabilidade de pipeline de dados: qualidade, integridade, profiling e FinOps |
+| **[`behavior-score-app`](https://github.com/rafa-trindade/behavior-score-app)**  | **Painel interativo de análise de risco de crédito, simulação de política e motor de decisão** |
 
 
 ---
